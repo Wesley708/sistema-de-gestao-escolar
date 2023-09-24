@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 18px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(livros.jpg);
+    font-family: 'Poppins', sans-serif;
+}#logo{
+    width: 90px;
+    align-items: center;
+    text-align: center;
+    color: rgb(250, 250, 250);
+    border-radius: 4px;
+}#cinza{
+    border-radius:  8px 8px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 120px;
+    background-color: rgb(71, 71, 71);
+}.center{
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+}#cor{
+    background-color: 0;
+}#overlay{
+    background-color: rgba(0, 0, 0, 0.856);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}input{
+    text-align: center;
+    width: 400px;
+    height: 40px;
+    border-radius: 4px;
+    border:1px solid rgba(0, 0, 0, 0.399);
+    background-color: white;
+}form{
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}#radio{
+    display: flex;
+    flex-direction: row;
+}
+#radio .form-check {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+#radio .form-check input{
+    width: 20px;
+    margin: 0 5px;
+}
+#radio .form-check label{
+    margin-right: 20px;
+}#button{
+    background-color: rgb(33, 49, 102);
+    color: white;
+}#button:hover{
+    background-color: rgb(22, 33, 70);
+}
