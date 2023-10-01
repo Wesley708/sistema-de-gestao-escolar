@@ -7,6 +7,8 @@
             <?php
         echo "<h3 id='usuario'>Bem Vindo $logado</h3>";
         ?>
+        
         <a href="sair.php" class="btns"> Sair</a>
+        
     </nav>
 </div>

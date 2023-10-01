@@ -20,7 +20,7 @@ $logado = $_SESSION['usuario'];
           while($linha =  mysql_fetch_assoc($sql)) {
         ?>
   <div id="content">
-        <a href="turma_professor.php?turma=<?php echo $linha['nivel']; ?>" class="list-group-item list-group-item-action mt-2 ms-1 btn btn-primary text-center" target="principal"><?php echo $linha['nivel']; ?></a>
+        <a href="turma_professor.php?turma=<?php echo $linha['nivel']; ?>" class="menu" target="principal"><?php echo $linha['nivel']; ?></a>
   </div>
   
         <?php  }

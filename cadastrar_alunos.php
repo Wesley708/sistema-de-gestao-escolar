@@ -45,46 +45,46 @@
                     <div id="dentro">
                         <h2 class="tituloMenu">Cadastrar Aluno</h2>
                             
-                        <form class="form-control mt-2" name="form1" method="post" id="formulario">
+                        <form class="cadastro" name="form1" method="post" id="formulario">
             
                         
-                            <div class="mb-3">
-                                <label for="nome_aluno" class="form-label">Nome Completo:............. </label>
+                            <div class="cadastrocontent">
+                                <label for="nome_aluno" class="form-label">Nome Completo:</label>
                                 <input type="text" name="txt_nome_aluno" size="30" id="input" id="nome_aluno"class="form-control" required  >
                             </div>
-                            <div class="mb-3">
-                                <label for="nascimento_aluno" class="form-label">Data de Nascimento:...... </label>
+                            <div class="cadastrocontent">
+                                <label for="nascimento_aluno" class="form-label">Data de Nascimento: </label>
                                 <input type="date" name="txt_nascimento_aluno" size="30" id="input" id="nascimento_aluno"class="form-control" required >
                             </div>
             
-                            <div class="mb-3">
-                                <label for="cpf_aluno" class="form-label">CPF:...................................... </label>
+                            <div class="cadastrocontent">
+                                <label for="cpf_aluno" class="form-label">CPF:</label>
                                 <input type="text" name="txt_cpf_aluno" size="30" id="input" id="cpf_aluno" class="form-control" required >
                             </div>
             
-                            <div class="mb-3">
-                                <label for="telefone" class="form-label">Telefone:........................... </label>
+                            <div class="cadastrocontent">
+                                <label for="telefone" class="form-label">Telefone: </label>
                                 <input type="number" name="txt_telefone" size="30" id="input" id="telefone" class="form-control" required >
                             </div>
-                            <div class="mb-3">
-                                <label for="endereco" class="form-label">Endereço:......................... </label>
+                            <div class="cadastrocontent">
+                                <label for="endereco" class="form-label">Endereço: </label>
                                 <input type="text" name="txt_endereco" size="30" id="input" id="endereco" class="form-control" required >
                             </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">E-mail:.............................. </label>
+                            <div class="cadastrocontent">
+                                <label for="email" class="form-label">E-mail: </label>
                                 <input type="text" name="txt_email" size="30" id="input" id="email" class="form-control" required >
                             </div>
             
-                            <div class="mb-3">
-                                <label for="responsavel" class="form-label">Pai ou Mãe:..................... </label>
+                            <div class="cadastrocontent">
+                                <label for="responsavel" class="form-label">Pai ou Mãe:</label>
                                 <input type="text" name="txt_responsavel" size="30" id="input" id="responsavel" class="form-control" required >
                             </div>
-                            <div class="mb-3">
-                                <label for="senha_aluno" class="form-label">Senha:............................. </label>
+                            <div class="cadastrocontent">
+                                <label for="senha_aluno" class="form-label">Senha: </label>
                                 <input type="password" name="txt_senha_aluno" size="30" id="input" id="senha_aluno"class="form-control" required >
                             </div>
-                            <div>
-                                <label for="turma" class="form-label">Turma:................................ </label>
+                            <div class="cadastrocontent">
+                                <label for="turma" class="form-label">Turma: </label>
                                 <select id="input" id="turma" name="txt_nivel" required>
                                     <?php Include 'listar_todas_turmas.php'; ?>
                                 </select>

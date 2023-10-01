@@ -15,16 +15,6 @@ body{
     align-items: center;
     text-align: center;
 }
-#input{
-    border: solid 1px rgb(22, 33, 70);
-    border-radius: 5px;
-    line-height:15px;
-    padding: 5px 5px;
-    margin-bottom: 10px;  
-    width: 250px;          
-    text-align: center;  
-    font-family: 'Poppins', sans-serif;  
-}
 h2{
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
@@ -78,6 +68,8 @@ a{
 } 
 #largura{
     float: right;
+    display: flex;
+    justify-content: center;
     width: 80%;
 }
 .tituloMenu{
@@ -106,8 +98,11 @@ nav{
     background-color: red;
     text-decoration: none;
     color: white;
-    padding: 15px 25px;
+    padding: 14px 18px;
     border-radius: 5px;
+    transition: .2;
+}.btns:hover{
+    background-color: orangered;
 }
 h3{
     color: white;
@@ -190,4 +185,23 @@ p{
 .menu:hover{
     background-color: rgb(22,25,36);
     height: 45px;
+}.cadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+}.cadastrocontent{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+   
+}
+input,select{
+    text-align: center;
+    width: 250px;
+    height: 35px;
+    border-radius: 4px;
+    border:1px solid rgba(0, 0, 0, 0.399);
+    background-color: white;
 }

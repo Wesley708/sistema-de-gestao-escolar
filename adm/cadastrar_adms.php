@@ -1,9 +1,3 @@
-<!-- 
-1 - Incluido email no cadastro 
-2 - corrigido acentuação
-3 - Alterado texto que estava todo maiúsculo
-
--->
 <?php
     Include 'conexao.php';
     session_start();
@@ -46,57 +40,54 @@
       
         <title></title>
     </head>
-    <body class="container">
+    <body class="">
       <?php Include '../navbar.php'; ?>
         <div id="container">
             <?php Include '../menu_adm.php'; ?>
             <div id="largura">
-                <h2 class="tituloMenu">Cadastrar Administrador</h2>
-                    <form class="form-control mt-2" name="form1" method="post" id="formulario">                       
-                        <div class="mb-3">
-                            <label for="nome_adm" class="form-label">Nome Completo:................ </label>
-                                        <input type="text" name="txt_nome_adm" size="30" id="input" id="nome_adm"class="form-control"  >
-                                        </div>
-                        
-                                        <div class="mb-3">
-                        <label for="nascimento_adm" class="form-label">Data de nascimento:......... </label>
-                        <input type="date" name="txt_nascimento_adm" size="30" id="input" id="nascimento_adm"class="form-control" required >
-                        </div>
-                        
-                                        <div class="mb-3">
-                                        <label for="cpf_adm" class="form-label">CPF:.......................................... </label>
-                                        <input type="number" name="txt_cpf_adm" size="30" id="input" id="cpf_adm"class="form-control" required >
-                                        </div>
-                        
-                                        <div class="mb-3">
-                                        <label for="endereco" class="form-label">Endereço:............................... </label>
-                                        <input type="text" name="txt_endereco" size="30" id="input" id="endereco"class="form-control" required >
-                                        </div>
-                        
-                                        <div class="mb-3">
-                                        <label for="telefone" class="form-label">Telefone:................................. </label>
-                                        <input type="number" name="txt_telefone" size="30" id="input" id="telefone"class="form-control" required >
-                                        </div>
-                        
-                                <div class="mb-3">
-                                        <label for="email" class="form-label">E-mail:.................................... </label>
-                                        <input type="text" name="txt_email" size="30" id="input" id="email"class="form-control" required>
-                                        </div>
-                        
-                                <div class="mb-3">
-                                        <label for="senha_adm" class="form-label"> Senha:.................................... </label>
-                                        <input type="password" name="txt_senha_adm" size="30" id="input" id="senha_adm"class="form-control"  >
-                                        </div>
-                        
-                                        <input type="submit" value="Cadastrar" class="botao" id="input" name="submit" onclick="document.form1.action='cadastrar_adm.php'" class="btn btn-primary mt-2">
-                        
-                                      </form>
-                      </div>
-                      
-                      
-                      
-                      
-                      
-                    </div>
+                <div class="dentro">
+                    <h2 class="tituloMenu">Cadastrar Administrador</h2>
+                        <form class="cadastro" name="form1" method="post" id="formulario">
+                            <div class="cadastrocontent">
+                                <label for="nome_adm" class="form-label">Nome Completo: </label>
+                                            <input type="text" name="txt_nome_adm" size="30" id="input" id="nome_adm"class="form-control"  >
+                                            </div>
+                    
+                                            <div class="cadastrocontent">
+                            <label for="nascimento_adm" class="form-label">Data de nascimento:</label>
+                            <input type="date" name="txt_nascimento_adm" size="30" id="input" id="nascimento_adm"class="form-control" required >
+                            </div>
+                    
+                            <div class="cadastrocontent">
+                            <label for="cpf_adm" class="form-label">CPF: </label>
+                            <input type="number" name="txt_cpf_adm" size="30" id="input" id="cpf_adm"class="form-control" required >
+                            </div>
+
+                            <div class="cadastrocontent">
+                            <label for="endereco" class="form-label">Endereço:</label>
+                            <input type="text" name="txt_endereco" size="30" id="input" id="endereco"class="form-control" required >
+                            </div>
+
+                            <div class="cadastrocontent">
+                            <label for="telefone" class="form-label">Telefone:</label>
+                            <input type="number" name="txt_telefone" size="30" id="input" id="telefone"class="form-control" required >
+                            </div>
+
+                    <div class="cadastrocontent">
+                            <label for="email" class="form-label">E-mail:</label>
+                            <input type="text" name="txt_email" size="30" id="input" id="email"class="form-control" required>
+                            </div>
+
+                    <div class="cadastrocontent">
+                            <label for="senha_adm" class="form-label"> Senha:</label>
+                            <input type="password" name="txt_senha_adm" size="30" id="input" id="senha_adm"class="form-control"  >
+                            </div>
+
+                            <input type="submit" value="Cadastrar" class="botao" id="input" name="submit" onclick="document.form1.action='cadastrar_adm.php'" class="btn btn-primary mt-2">
+
+                            </form>
+                </div>
+            </div>
+        </div>
   </body>
 </html>

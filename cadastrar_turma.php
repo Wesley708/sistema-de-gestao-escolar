@@ -47,7 +47,7 @@
     <div id="dentro">
         <h2 class="tituloMenu">Criar nova turma</h2>
         <form class="form-control mt-2" name="form1" method="post" id="formulario">
-          <div class="mb-3">
+          <div class="cadastrocontent">
                         <label for="nome_turma" class="form-label">Nome da nova Turma: </label>
                         <input type="text" name="txt_nome_turma" size="30" id="input"class="form-control" required >
                     </div>
