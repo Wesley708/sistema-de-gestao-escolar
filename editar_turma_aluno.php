@@ -39,26 +39,28 @@ session_start();
 
 
 
-<h2 class="tituloMenu">Trocar turma do aluno</h2>
-
-<form name="form1" method="POST">
-Nome:<br><input type="text" name="txt_nome" value="<?php if (isset($_GET['nome'])) echo $_GET['nome'] ?>" id="input" readonly><br>
-E-mail:<br><input type="text" name="txt_usuario" value="<?php if (isset($_GET['usuario'])) echo $_GET['usuario'] ?>" id="input" readonly><br>
-Turma atual:<br><input type="text" name="txt_turma" value="<?php if (isset($_GET['nivel'])) echo $_GET['nivel'] ?>"readonly id="input" ><br>
-
-Id_aula:<br><input type="text" name="txt_aula" value="<?php if (isset($_GET['id_aula'])) echo $_GET['id_aula'] ?>"readonly id="input" ><br>
-
-Nova turma: <br>
-<select name="txt_nivel" required  id="input">                    
-                            <?php 
-                Include 'listar_todas_turmas.php';
-               ?>
-                </select>
-
-<br> <br>
-
-
-<INPUT TYPE="submit" name="bt_editar" VALUE="ALTERAR" class="botao" id="input"  onClick="document.form1.action='mudar_turma_aluno.php'">
+<div class="dentro">
+    <h2 class="tituloMenu">Trocar turma do aluno</h2>
+    
+    <form name="form1" method="POST">
+    Nome:<br><input type="text" name="txt_nome" value="<?php if (isset($_GET['nome'])) echo $_GET['nome'] ?>" id="input" readonly><br>
+    E-mail:<br><input type="text" name="txt_usuario" value="<?php if (isset($_GET['usuario'])) echo $_GET['usuario'] ?>" id="input" readonly><br>
+    Turma atual:<br><input type="text" name="txt_turma" value="<?php if (isset($_GET['nivel'])) echo $_GET['nivel'] ?>"readonly id="input" ><br>
+    
+    Id_aula:<br><input type="text" name="txt_aula" value="<?php if (isset($_GET['id_aula'])) echo $_GET['id_aula'] ?>"readonly id="input" ><br>
+    
+    Nova turma: <br>
+    <select name="txt_nivel" required  id="input">
+                                <?php
+                    Include 'listar_todas_turmas.php';
+                   ?>
+                    </select>
+    
+    <br> <br>
+    
+    
+    <INPUT TYPE="submit" name="bt_editar" VALUE="ALTERAR" class="alterar" id="input"  onClick="document.form1.action='mudar_turma_aluno.php'">
+</div>
 
 </div></div>
 
