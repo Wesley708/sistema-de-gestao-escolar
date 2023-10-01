@@ -69,7 +69,7 @@ if(isset($_GET['apagar'])){
 			
 						</tr>
 						<tr>
-						<th><h3>Nome</h3></th>
+						<th><h3 class="nome">Nome</h3></th>
 						<th><h3>CPF</h3></th>
 						<th><h3>Data Nascimento</h3></th>
 						<th><h3>Responsavel</h3></th>
@@ -77,7 +77,7 @@ if(isset($_GET['apagar'])){
 						<th><h3>Telefone</h3></th>
 						<th><h3>E-mail</h3></th>
 						<th><h3>Trocar turma</h3></th>
-						<th><h3>Apagar</h3></th>
+						<th><h3 class="apagar">Apagar</h3></th>
 			
 						</tr>
 						<tr>
